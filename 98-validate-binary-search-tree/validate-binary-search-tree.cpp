@@ -16,13 +16,13 @@ bool vh(TreeNode *root,TreeNode* min,TreeNode*max){
         return true;
     }
 
-    if(min!=NULL && root->val <= min->val){
+    if(min!=NULL && root->val <=min->val){
         return false;
     }
     else if (max!=NULL && root->val >=max->val){
         return false;
     }
-    return vh(root->right,root,max) && vh(root->left,min,root) ;
+    return vh(root->left,min,root) && vh(root->right,root,max);
 }
     bool isValidBST(TreeNode* root) {
         return vh(root,NULL,NULL);

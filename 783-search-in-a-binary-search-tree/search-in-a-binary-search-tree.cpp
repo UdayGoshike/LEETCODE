@@ -23,7 +23,7 @@ public:
         }else{
             return searchBST(root->left,val);
         }
-        return NULL;
+       
         
     }
 };

@@ -14,7 +14,7 @@ public:
             gt+=gas[i]-cost[i];
             if(gt<0){
                 gt=0;
-                r=i+1;
+                r=i+1;;
             }
         }
         return r;

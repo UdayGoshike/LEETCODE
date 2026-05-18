@@ -27,7 +27,7 @@ TreeNode* fu(vector<int>& postorder, vector<int>& inorder, int& p, int l,
         }
         TreeNode* root = new TreeNode(postorder[p]);
         int i = s(inorder, l, r, postorder[p--]);
-         root->right = fu(postorder, inorder, p, i + 1, r);
+        root->right = fu(postorder, inorder, p, i + 1, r);
         root->left = fu(postorder, inorder, p, l, i - 1);
        
         return root;

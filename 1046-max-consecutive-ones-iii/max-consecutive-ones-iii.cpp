@@ -8,7 +8,7 @@ public:
             if(nums[i]==0){
                 z++;
             }
-            while(z>k){
+            if(z>k){
                 if(nums[l]==0){
                     z--;
                 }

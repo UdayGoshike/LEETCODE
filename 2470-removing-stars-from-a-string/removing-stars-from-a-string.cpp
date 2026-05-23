@@ -5,8 +5,6 @@ public:
         for(int i=0;i<s.size();i++){
             if(s[i]=='*'&&!st.empty()){
                 st.pop();
-            }else if (s[i]=='*' && st.empty()){
-                i++;
             }
             else{
                 st.push(s[i]);

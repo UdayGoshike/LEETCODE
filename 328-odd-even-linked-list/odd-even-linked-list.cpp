@@ -18,6 +18,7 @@ public:
         ListNode *h1=o;
         ListNode *e=head->next;
         ListNode *h2=e;
+        //use even pointer as loop controller as using odd pointer may cause runtime error
         while(e!=NULL && e->next!=NULL){
             o->next=e->next;
             o=o->next;

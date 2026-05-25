@@ -22,12 +22,10 @@ public:
             prev=slow;
             slow=slow->next;
         }
-            if(fast==NULL){
+            if(fast==NULL ||fast->next==NULL){
                 prev->next=slow->next;
             }
-            else if(fast->next==NULL){
-                prev->next=slow->next;
-            }
+            
         return head;
     }
 };

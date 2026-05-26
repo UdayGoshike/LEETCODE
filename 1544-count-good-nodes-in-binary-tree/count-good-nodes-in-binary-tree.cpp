@@ -28,7 +28,7 @@ int help(TreeNode *root,int a){
         if(root==NULL){
             return 0;
         }
-        help(root,INT_MIN);
-        return c;
+        
+        return help(root,INT_MIN);;
     }
 };

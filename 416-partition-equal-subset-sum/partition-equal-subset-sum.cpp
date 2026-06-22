@@ -9,7 +9,7 @@ vector<vector<int>>dp;
             return false;
         }
         if(dp[i][s]!=-1){
-            return dp[i][s];
+            return 0;
         }
         return  dp[i][s]=h(s+nums[i],sum,i+1,nums,nums.size())||h(s,sum,i+1,nums,nums.size());
         

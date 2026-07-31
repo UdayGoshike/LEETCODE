@@ -11,19 +11,8 @@ public:
             return a.second>b.second;
         });
         int c=0;
-        int s=0;
-        int co=1;
-        for(auto i:v){
-              s++;
-            if(s==9){
-                s=1;
-                co++;
-                c+=(i.second*co);
-
-            }else{
-              
-                c+=(i.second*co);
-            }
+        for(int i=0;i<v.size();i++){
+            c+=(v[i].second*(i/8 +1));
         }
         return c;
     }

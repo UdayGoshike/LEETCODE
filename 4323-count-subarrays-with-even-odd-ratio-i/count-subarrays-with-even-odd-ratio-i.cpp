@@ -11,9 +11,9 @@ public:
                 }else{
                     o++;
                 }
-                float t=a/b;
+              
                 
-                if(o>0 && e*b<=o*a){
+                if(o>0 && e*b<=a*o){
                     
                     an++;
                 }

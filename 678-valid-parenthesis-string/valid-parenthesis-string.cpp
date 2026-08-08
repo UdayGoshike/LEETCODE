@@ -26,15 +26,14 @@ public:
                 min++;
                 max++;
             } else if (s[i] == ')') {
-                if ( max == 0) {
-                    return false;
-                } 
+                
                 if (min > 0) {
                     min--;
-                } 
-                if (max > 0) {
-                    max--;
                 }
+                max--;
+                if ( max<0) {
+                    return false;
+                } 
             } else {
                 if (min > 0) {
                     min--;

@@ -31,7 +31,7 @@ public:
                     min--;
                 }
                 max--;
-                if ( max<0) {
+                if (max<0) {
                     return false;
                 } 
             } else {

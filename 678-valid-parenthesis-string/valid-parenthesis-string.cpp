@@ -26,7 +26,7 @@ public:
                 min++;
                 max++;
             } else if (s[i] == ')') {
-                if (min == 0 && max == 0) {
+                if ( max == 0) {
                     return false;
                 } 
                 if (min > 0) {
